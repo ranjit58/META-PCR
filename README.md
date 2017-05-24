@@ -1,4 +1,4 @@
-# unique-snp-id-finder
+# META-PCR
 Find unique snp regions for discriminating samples using a sliding window-based approach for VCF data.
 
 vcf_tools.py
