@@ -1,0 +1,150 @@
+##fileformat=VCFv4.2
+##ALT=<ID=NON_REF,Description="Represents any possible alternative allele at this location">
+##FILTER=<ID=LowQual,Description="Low quality">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=RGQ,Number=1,Type=Integer,Description="Unconditional reference genotype confidence, encoded as a phred quality -10*log10 p(genotype call is wrong)">
+##FORMAT=<ID=SB,Number=4,Type=Integer,Description="Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.">
+##GATKCommandLine.GenotypeGVCFs=<ID=GenotypeGVCFs,Version=3.6-0-g89b7209,Date="Tue Jun 21 11:15:36 CDT 2016",Epoch=1466525736610,CommandLineOptions="analysis_type=GenotypeGVCFs input_file=[] showFullBamList=false read_buffer_size=null read_filter=[] disable_read_filter=[] intervals=null excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=/scratch/user/rkumar/work/metasnp2016/REFERENCE2/genomes_ref.fa nonDeterministicRandomSeed=false disableDithering=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=1000 baq=OFF baqGapOpenPenalty=40.0 refactor_NDN_cigar_string=false fix_misencoded_quality_scores=false allow_potentially_misencoded_quality_scores=false useOriginalQualities=false defaultBaseQualities=-1 performanceLog=null BQSR=null quantize_quals=0 static_quantized_quals=null round_down_quantized=false disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 globalQScorePrior=-1.0 validation_strictness=SILENT remove_program_records=false keep_program_records=false sample_rename_mapping_file=null unsafe=null disable_auto_index_creation_and_locking_when_reading_rods=false no_cmdline_in_header=false sites_only=false never_trim_vcf_format_field=false bcf=false bam_compression=null simplifyBAM=false disable_bam_indexing=false generate_md5=false num_threads=1 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false variant_index_type=DYNAMIC_SEEK variant_index_parameter=-1 reference_window_stop=0 phone_home= gatk_key=null tag=NA logging_level=INFO log_to_file=null help=false version=false variant=[(RodBindingCollection [(RodBinding name=variant source=../../GATK-SNP/Bacteroides_vulgatus/S10a.g.vcf), (RodBinding name=variant2 source=../../GATK-SNP/Bacteroides_vulgatus/S10b.g.vcf), (RodBinding name=variant3 source=../../GATK-SNP/Bacteroides_vulgatus/S11.g.vcf), (RodBinding name=variant4 source=../../GATK-SNP/Bacteroides_vulgatus/S12.g.vcf), (RodBinding name=variant5 source=../../GATK-SNP/Bacteroides_vulgatus/S13.g.vcf), (RodBinding name=variant6 source=../../GATK-SNP/Bacteroides_vulgatus/S14a.g.vcf), (RodBinding name=variant7 source=../../GATK-SNP/Bacteroides_vulgatus/S14b.g.vcf), (RodBinding name=variant8 source=../../GATK-SNP/Bacteroides_vulgatus/S15a.g.vcf), (RodBinding name=variant9 source=../../GATK-SNP/Bacteroides_vulgatus/S15b.g.vcf), (RodBinding name=variant10 source=../../GATK-SNP/Bacteroides_vulgatus/S15c.g.vcf), (RodBinding name=variant11 source=../../GATK-SNP/Bacteroides_vulgatus/S16a.g.vcf), (RodBinding name=variant12 source=../../GATK-SNP/Bacteroides_vulgatus/S16b.g.vcf), (RodBinding name=variant13 source=../../GATK-SNP/Bacteroides_vulgatus/S17a.g.vcf), (RodBinding name=variant14 source=../../GATK-SNP/Bacteroides_vulgatus/S17b.g.vcf), (RodBinding name=variant15 source=../../GATK-SNP/Bacteroides_vulgatus/S18a.g.vcf), (RodBinding name=variant16 source=../../GATK-SNP/Bacteroides_vulgatus/S18b.g.vcf), (RodBinding name=variant17 source=../../GATK-SNP/Bacteroides_vulgatus/S19a.g.vcf), (RodBinding name=variant18 source=../../GATK-SNP/Bacteroides_vulgatus/S19b.g.vcf), (RodBinding name=variant19 source=../../GATK-SNP/Bacteroides_vulgatus/S1.g.vcf), (RodBinding name=variant20 source=../../GATK-SNP/Bacteroides_vulgatus/S20a.g.vcf), (RodBinding name=variant21 source=../../GATK-SNP/Bacteroides_vulgatus/S20b.g.vcf), (RodBinding name=variant22 source=../../GATK-SNP/Bacteroides_vulgatus/S21a.g.vcf), (RodBinding name=variant23 source=../../GATK-SNP/Bacteroides_vulgatus/S21b.g.vcf), (RodBinding name=variant24 source=../../GATK-SNP/Bacteroides_vulgatus/S22a.g.vcf), (RodBinding name=variant25 source=../../GATK-SNP/Bacteroides_vulgatus/S22b.g.vcf), (RodBinding name=variant26 source=../../GATK-SNP/Bacteroides_vulgatus/S23a.g.vcf), (RodBinding name=variant27 source=../../GATK-SNP/Bacteroides_vulgatus/S23b.g.vcf), (RodBinding name=variant28 source=../../GATK-SNP/Bacteroides_vulgatus/S24a.g.vcf), (RodBinding name=variant29 source=../../GATK-SNP/Bacteroides_vulgatus/S24b.g.vcf), (RodBinding name=variant30 source=../../GATK-SNP/Bacteroides_vulgatus/S25.g.vcf), (RodBinding name=variant31 source=../../GATK-SNP/Bacteroides_vulgatus/S26.g.vcf), (RodBinding name=variant32 source=../../GATK-SNP/Bacteroides_vulgatus/S27.g.vcf), (RodBinding name=variant33 source=../../GATK-SNP/Bacteroides_vulgatus/S28a.g.vcf), (RodBinding name=variant34 source=../../GATK-SNP/Bacteroides_vulgatus/S28b.g.vcf), (RodBinding name=variant35 source=../../GATK-SNP/Bacteroides_vulgatus/S29a.g.vcf), (RodBinding name=variant36 source=../../GATK-SNP/Bacteroides_vulgatus/S29b.g.vcf), (RodBinding name=variant37 source=../../GATK-SNP/Bacteroides_vulgatus/S2a.g.vcf), (RodBinding name=variant38 source=../../GATK-SNP/Bacteroides_vulgatus/S2b.g.vcf), (RodBinding name=variant39 source=../../GATK-SNP/Bacteroides_vulgatus/S30.g.vcf), (RodBinding name=variant40 source=../../GATK-SNP/Bacteroides_vulgatus/S31a.g.vcf), (RodBinding name=variant41 source=../../GATK-SNP/Bacteroides_vulgatus/S31b.g.vcf), (RodBinding name=variant42 source=../../GATK-SNP/Bacteroides_vulgatus/S32.g.vcf), (RodBinding name=variant43 source=../../GATK-SNP/Bacteroides_vulgatus/S33.g.vcf), (RodBinding name=variant44 source=../../GATK-SNP/Bacteroides_vulgatus/S34.g.vcf), (RodBinding name=variant45 source=../../GATK-SNP/Bacteroides_vulgatus/S35.g.vcf), (RodBinding name=variant46 source=../../GATK-SNP/Bacteroides_vulgatus/S36.g.vcf), (RodBinding name=variant47 source=../../GATK-SNP/Bacteroides_vulgatus/S37.g.vcf), (RodBinding name=variant48 source=../../GATK-SNP/Bacteroides_vulgatus/S38.g.vcf), (RodBinding name=variant49 source=../../GATK-SNP/Bacteroides_vulgatus/S39.g.vcf), (RodBinding name=variant50 source=../../GATK-SNP/Bacteroides_vulgatus/S3.g.vcf), (RodBinding name=variant51 source=../../GATK-SNP/Bacteroides_vulgatus/S40.g.vcf), (RodBinding name=variant52 source=../../GATK-SNP/Bacteroides_vulgatus/S41.g.vcf), (RodBinding name=variant53 source=../../GATK-SNP/Bacteroides_vulgatus/S42.g.vcf), (RodBinding name=variant54 source=../../GATK-SNP/Bacteroides_vulgatus/S43a.g.vcf), (RodBinding name=variant55 source=../../GATK-SNP/Bacteroides_vulgatus/S43b.g.vcf), (RodBinding name=variant56 source=../../GATK-SNP/Bacteroides_vulgatus/S44.g.vcf), (RodBinding name=variant57 source=../../GATK-SNP/Bacteroides_vulgatus/S45.g.vcf), (RodBinding name=variant58 source=../../GATK-SNP/Bacteroides_vulgatus/S46.g.vcf), (RodBinding name=variant59 source=../../GATK-SNP/Bacteroides_vulgatus/S47.g.vcf), (RodBinding name=variant60 source=../../GATK-SNP/Bacteroides_vulgatus/S48a.g.vcf), (RodBinding name=variant61 source=../../GATK-SNP/Bacteroides_vulgatus/S48b.g.vcf), (RodBinding name=variant62 source=../../GATK-SNP/Bacteroides_vulgatus/S49a.g.vcf), (RodBinding name=variant63 source=../../GATK-SNP/Bacteroides_vulgatus/S49b.g.vcf), (RodBinding name=variant64 source=../../GATK-SNP/Bacteroides_vulgatus/S4.g.vcf), (RodBinding name=variant65 source=../../GATK-SNP/Bacteroides_vulgatus/S50.g.vcf), (RodBinding name=variant66 source=../../GATK-SNP/Bacteroides_vulgatus/S51a.g.vcf), (RodBinding name=variant67 source=../../GATK-SNP/Bacteroides_vulgatus/S51b.g.vcf), (RodBinding name=variant68 source=../../GATK-SNP/Bacteroides_vulgatus/S52.g.vcf), (RodBinding name=variant69 source=../../GATK-SNP/Bacteroides_vulgatus/S53.g.vcf), (RodBinding name=variant70 source=../../GATK-SNP/Bacteroides_vulgatus/S54.g.vcf), (RodBinding name=variant71 source=../../GATK-SNP/Bacteroides_vulgatus/S55a.g.vcf), (RodBinding name=variant72 source=../../GATK-SNP/Bacteroides_vulgatus/S55b.g.vcf), (RodBinding name=variant73 source=../../GATK-SNP/Bacteroides_vulgatus/S56a.g.vcf), (RodBinding name=variant74 source=../../GATK-SNP/Bacteroides_vulgatus/S56b.g.vcf), (RodBinding name=variant75 source=../../GATK-SNP/Bacteroides_vulgatus/S56c.g.vcf), (RodBinding name=variant76 source=../../GATK-SNP/Bacteroides_vulgatus/S57a.g.vcf), (RodBinding name=variant77 source=../../GATK-SNP/Bacteroides_vulgatus/S57b.g.vcf), (RodBinding name=variant78 source=../../GATK-SNP/Bacteroides_vulgatus/S58.g.vcf), (RodBinding name=variant79 source=../../GATK-SNP/Bacteroides_vulgatus/S59a.g.vcf), (RodBinding name=variant80 source=../../GATK-SNP/Bacteroides_vulgatus/S59b.g.vcf), (RodBinding name=variant81 source=../../GATK-SNP/Bacteroides_vulgatus/S5a.g.vcf), (RodBinding name=variant82 source=../../GATK-SNP/Bacteroides_vulgatus/S5b.g.vcf), (RodBinding name=variant83 source=../../GATK-SNP/Bacteroides_vulgatus/S60a.g.vcf), (RodBinding name=variant84 source=../../GATK-SNP/Bacteroides_vulgatus/S60b.g.vcf), (RodBinding name=variant85 source=../../GATK-SNP/Bacteroides_vulgatus/S61a.g.vcf), (RodBinding name=variant86 source=../../GATK-SNP/Bacteroides_vulgatus/S61b.g.vcf), (RodBinding name=variant87 source=../../GATK-SNP/Bacteroides_vulgatus/S62a.g.vcf), (RodBinding name=variant88 source=../../GATK-SNP/Bacteroides_vulgatus/S62b.g.vcf), (RodBinding name=variant89 source=../../GATK-SNP/Bacteroides_vulgatus/S63a.g.vcf), (RodBinding name=variant90 source=../../GATK-SNP/Bacteroides_vulgatus/S63b.g.vcf), (RodBinding name=variant91 source=../../GATK-SNP/Bacteroides_vulgatus/S64a.g.vcf), (RodBinding name=variant92 source=../../GATK-SNP/Bacteroides_vulgatus/S64b.g.vcf), (RodBinding name=variant93 source=../../GATK-SNP/Bacteroides_vulgatus/S65a.g.vcf), (RodBinding name=variant94 source=../../GATK-SNP/Bacteroides_vulgatus/S65b.g.vcf), (RodBinding name=variant95 source=../../GATK-SNP/Bacteroides_vulgatus/S66a.g.vcf), (RodBinding name=variant96 source=../../GATK-SNP/Bacteroides_vulgatus/S66b.g.vcf), (RodBinding name=variant97 source=../../GATK-SNP/Bacteroides_vulgatus/S67.g.vcf)])] out=/scratch/user/rkumar/work/metasnp2016/HMP/GATK-MULTISNP/Bacteroides_vulgatus/Bacteroides_vulgatus.vcf includeNonVariantSites=true uniquifySamples=false annotateNDA=false heterozygosity=0.001 indel_heterozygosity=1.25E-4 standard_min_confidence_threshold_for_calling=30.0 standard_min_confidence_threshold_for_emitting=30.0 max_alternate_alleles=6 max_num_PL_values=100 input_prior=[] sample_ploidy=1 annotation=[] group=[StandardAnnotation] dbsnp=(RodBinding name= source=UNBOUND) filter_reads_with_N_cigar=false filter_mismatching_base_and_quals=false filter_bases_not_stored=false">
+##GATKCommandLine.HaplotypeCaller=<ID=HaplotypeCaller,Version=3.4-46-gbc02625,Date="Mon Jun 20 00:06:15 CDT 2016",Epoch=1466399175361,CommandLineOptions="analysis_type=HaplotypeCaller input_file=[../../GATK_STEPS/S55a_realigned.bam] showFullBamList=false read_buffer_size=null phone_home=AWS gatk_key=null tag=NA read_filter=[] disable_read_filter=[] intervals=[Bacteroides_vulgatus:1-4781701] excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=../../../REFERENCE2/genomes_ref.fa nonDeterministicRandomSeed=false disableDithering=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=500 baq=OFF baqGapOpenPenalty=40.0 refactor_NDN_cigar_string=false fix_misencoded_quality_scores=false allow_potentially_misencoded_quality_scores=false useOriginalQualities=false defaultBaseQualities=-1 performanceLog=null BQSR=null quantize_quals=0 disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 globalQScorePrior=-1.0 validation_strictness=SILENT remove_program_records=false keep_program_records=false sample_rename_mapping_file=null unsafe=null disable_auto_index_creation_and_locking_when_reading_rods=false no_cmdline_in_header=false sites_only=false never_trim_vcf_format_field=false bcf=false bam_compression=null simplifyBAM=false disable_bam_indexing=false generate_md5=false num_threads=1 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false variant_index_type=DYNAMIC_SEEK variant_index_parameter=-1 logging_level=INFO log_to_file=null help=false version=false out=/scratch/user/rkumar/work/metasnp2016/HMP/GATK-SNP/Bacteroides_vulgatus/S55a.g.vcf likelihoodCalculationEngine=PairHMM heterogeneousKmerSizeResolution=COMBO_MIN dbsnp=(RodBinding name= source=UNBOUND) dontTrimActiveRegions=false maxDiscARExtension=25 maxGGAARExtension=300 paddingAroundIndels=150 paddingAroundSNPs=20 comp=[] annotation=[ClippingRankSumTest, DepthPerSampleHC, StrandBiasBySample] excludeAnnotation=[ChromosomeCounts, FisherStrand, StrandOddsRatio, QualByDepth] debug=false useFilteredReadsForAnnotations=false emitRefConfidence=BP_RESOLUTION bamOutput=null bamWriterType=CALLED_HAPLOTYPES disableOptimizations=false annotateNDA=false heterozygosity=0.001 indel_heterozygosity=1.25E-4 standard_min_confidence_threshold_for_calling=-0.0 standard_min_confidence_threshold_for_emitting=-0.0 max_alternate_alleles=6 input_prior=[] sample_ploidy=1 genotyping_mode=DISCOVERY alleles=(RodBinding name= source=UNBOUND) contamination_fraction_to_filter=0.0 contamination_fraction_per_sample_file=null p_nonref_model=null exactcallslog=null output_mode=EMIT_VARIANTS_ONLY allSitePLs=true gcpHMM=10 pair_hmm_implementation=VECTOR_LOGLESS_CACHING pair_hmm_sub_implementation=ENABLE_ALL always_load_vector_logless_PairHMM_lib=false phredScaledGlobalReadMismappingRate=45 noFpga=false sample_name=null kmerSize=[10, 25] dontIncreaseKmerSizesForCycles=false allowNonUniqueKmersInRef=false numPruningSamples=1 recoverDanglingHeads=false doNotRecoverDanglingBranches=false minDanglingBranchLength=4 consensus=false maxNumHaplotypesInPopulation=128 errorCorrectKmers=false minPruning=2 debugGraphTransformations=false allowCyclesInKmerGraphToGeneratePaths=false graphOutput=null kmerLengthForReadErrorCorrection=25 minObservationsForKmerToBeSolid=20 GVCFGQBands=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 70, 80, 90, 99] indelSizeToEliminateInRefModel=10 min_base_quality_score=10 includeUmappedReads=false useAllelesTrigger=false doNotRunPhysicalPhasing=true keepRG=null justDetermineActiveRegions=false dontGenotype=false dontUseSoftClippedBases=false captureAssemblyFailureBAM=false errorCorrectReads=false pcr_indel_model=CONSERVATIVE maxReadsInRegionPerSample=10000 minReadsPerAlignmentStart=10 mergeVariantsViaLD=false activityProfileOut=null activeRegionOut=null activeRegionIn=null activeRegionExtension=null forceActive=false activeRegionMaxSize=null bandPassSigma=null maxProbPropagationDistance=50 activeProbabilityThreshold=0.002 min_mapping_quality_score=20 filter_reads_with_N_cigar=false filter_mismatching_base_and_quals=false filter_bases_not_stored=false">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=BaseQRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities">
+##INFO=<ID=ClippingRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref number of hard clipped bases">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
+##INFO=<ID=DS,Number=0,Type=Flag,Description="Were any of the samples downsampled?">
+##INFO=<ID=ExcessHet,Number=1,Type=Float,Description="Phred-scaled p-value for exact test of excess heterozygosity">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=HaplotypeScore,Number=1,Type=Float,Description="Consistency of the site with at most two segregating haplotypes">
+##INFO=<ID=InbreedingCoeff,Number=1,Type=Float,Description="Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation">
+##INFO=<ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
+##INFO=<ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
+##INFO=<ID=QD,Number=1,Type=Float,Description="Variant Confidence/Quality by Depth">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+##INFO=<ID=SOR,Number=1,Type=Float,Description="Symmetric Odds Ratio of 2x2 contingency table to detect strand bias">
+##contig=<ID=Bacteroides_vulgatus,length=4781702>
+##contig=<ID=Bacteroides_ovatus,length=6775279>
+##contig=<ID=Bacteroides_uniformis,length=4719097>
+##contig=<ID=Bacteroides_sp_1_1_6,length=6760735>
+##contig=<ID=Prevotella_copri,length=3512473>
+##contig=<ID=Alistipes_putredinis,length=2550678>
+##contig=<ID=Parabacteroides_sp_D13,length=5370710>
+##contig=<ID=Parabacteroides_merdae,length=4434377>
+##contig=<ID=Bacteroides_cellulosilyticus,length=6870144>
+##contig=<ID=Bacteroides_sp_2_1_16,length=5236303>
+##contig=<ID=Eubacterium_rectale,length=3449685>
+##contig=<ID=Alistipes_shahii,length=3763317>
+##contig=<ID=Bacteroides_coprocola,length=4300117>
+##contig=<ID=Bacteroides_plebeius,length=4421924>
+##contig=<ID=Bacteroides_eggerthii,length=4197635>
+##contig=<ID=Escherichia_coli,length=5132068>
+##contig=<ID=Faecalibacterium_prausnitzii_SL3,length=3214418>
+##contig=<ID=Bacteroides_coprophilus,length=4041504>
+##contig=<ID=Ruminococcus_bromii,length=2249085>
+##contig=<ID=Faecalibacterium_prausnitzii_A2,length=3090349>
+##contig=<ID=Butyrivibrio_crossotus,length=2496039>
+##contig=<ID=Faecalibacterium_prausnitzii_L2,length=3321367>
+##contig=<ID=Roseburia_intestinalis,length=4143550>
+##contig=<ID=Roseburia_inulinivorans,length=4048462>
+##contig=<ID=Dialister_invisus,length=1895960>
+##contig=<ID=Eubacterium_siraeum,length=2943413>
+##contig=<ID=Ruminococcus_sp_5_1,length=3882394>
+##contig=<ID=Eubacterium_eligens,length=2144190>
+##contig=<ID=Akkermansia_muciniphila,length=2664102>
+##contig=<ID=Ruminococcus_torques_L2,length=3341681>
+##contig=<ID=Ruminococcus_torques_ATCC,length=2741706>
+##contig=<ID=Clostridium_sp_L2_50,length=2954616>
+##contig=<ID=Coprococcus_comes,length=3242215>
+##contig=<ID=Clostridium_sp_SS2_1,length=3142181>
+##contig=<ID=Clostridium_sp_M62_1,length=3842594>
+##contig=<ID=Ruminococcus_sp_SR1_5,length=3545606>
+##contig=<ID=Dorea_longicatena,length=2915433>
+##contig=<ID=Eubacterium_ventriosum,length=2870795>
+##contig=<ID=butyrate_prod_bact_SS3_4,length=3601020>
+##contig=<ID=Bacteroides_pectinophilus,length=3028326>
+##contig=<ID=Clostridium_nexile,length=3995628>
+##contig=<ID=Ruminococcus_obeum_ATCC,length=3625508>
+##contig=<ID=Coprococcus_eutactus,length=3102987>
+##contig=<ID=Ruminococcus_lactaris,length=2731235>
+##contig=<ID=Anaerotruncus_colihominis,length=3719688>
+##contig=<ID=Eubacterium_hallii,length=3290996>
+##contig=<ID=Ruminococcus_obeum_A2,length=3757491>
+##contig=<ID=Coprococcus_catus,length=3522704>
+##contig=<ID=Clostridium_leptum,length=3270209>
+##contig=<ID=Prevotella_buccalis,length=3033961>
+##contig=<ID=Subdoligranulum_variabile,length=3245471>
+##contig=<ID=Prevotella_bivia,length=2424432>
+##contig=<ID=Bifidobacterium_adolescentis,length=2389110>
+##contig=<ID=Clostridium_bolteae,length=6557988>
+##contig=<ID=Acidaminococcus_sp_D21,length=2238973>
+##contig=<ID=Collinsella_aerofaciens,length=2439869>
+##contig=<ID=Erysipelotrichaceae_bacterium,length=3193878>
+##contig=<ID=Clostridium_hathewayi,length=7163884>
+##contig=<ID=Bifidobacterium_longum,length=2396359>
+##contig=<ID=Holdemania_filiformis,length=3932923>
+##contig=<ID=Dorea_formicigenerans,length=3186031>
+##contig=<ID=Eubacterium_cylindroides,length=1966750>
+##contig=<ID=Blautia_hansenii,length=3058721>
+##contig=<ID=Prevotella_timonensis,length=2796067>
+##contig=<ID=Eubacterium_biforme,length=2517763>
+##contig=<ID=Clostridium_asparagiforme,length=6417332>
+##contig=<ID=Bacteroides_capillosus,length=4241076>
+##contig=<ID=Ruminococcus_sp_18P13,length=2573208>
+##contig=<ID=Clostridiales_bacterium,length=6548966>
+##contig=<ID=Catenibacterium_mitsuokai,length=2671313>
+##contig=<ID=Ruminococcus_gnavus,length=3501911>
+##contig=<ID=Enterococcus_faecium,length=2698137>
+##contig=<ID=Klebsiella_pneumoniae,length=5248520>
+##contig=<ID=Klebsiella_oxytoca,length=6097032>
+##contig=<ID=Lactobacillus_rhamnosus,length=3005051>
+##contig=<ID=Megasphaera_micronuciformis,length=1765528>
+##contig=<ID=Lactobacillus_salivarius,length=1827111>
+##contig=<ID=Lactobacillus_animalis,length=1882795>
+##contig=<ID=Morganella_morganii,length=3799539>
+##contig=<ID=Lactobacillus_fermentum,length=2098685>
+##contig=<ID=Fusobacterium_ulcerans,length=3487504>
+##contig=<ID=Veillonella_parvula,length=2132142>
+##contig=<ID=Proteus_mirabilis,length=4063606>
+##contig=<ID=Serratia_marcescens,length=5067328>
+##contig=<ID=Lactobacillus_plantarum,length=3197759>
+##contig=<ID=Citrobacter_freundii,length=5122674>
+##contig=<ID=Bacteroides_stercoris,length=4009829>
+##contig=<ID=Bacteroides_massiliensis,length=4510688>
+##contig=<ID=Alistipes_onderdonkii,length=3865648>
+##contig=<ID=Bilophila_wadsworthia,length=4433779>
+##contig=<ID=Prevotella_stercorea,length=3097322>
+##contig=<ID=Clostridium_clostridioforme,length=5500475>
+##contig=<ID=Barnesiella_intestinihominis,length=3443906>
+##reference=file:///scratch/user/rkumar/work/metasnp2016/REFERENCE2/genomes_ref.fa
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	S1	S10a	S10b	S11
+Bacteroides_vulgatus	2483401	.	A	Z	343.17	.	AC=0;AF=0.00;AN=83;DP=18058;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:115,0:115:1800	0:69,0:69:1800	0:68,1:69:1800	0:145,0:145:1800
+Bacteroides_vulgatus	2483402	.	B	Y	341.17	.	AC=0;AF=0.00;AN=83;DP=18022;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:115,0:115:1800	0:64,0:64:1800	0:67,0:67:1800	0:143,0:143:1800
+Bacteroides_vulgatus	2483403	.	C	X	343.17	.	AC=0;AF=0.00;AN=83;DP=18044;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:112,1:113:1800	0:63,0:63:1800	0:63,1:64:1800	0:143,0:143:1800
+Bacteroides_vulgatus	2483404	.	D	W	341.17	.	AC=0;AF=0.00;AN=83;DP=18133;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:113,0:113:1800	0:63,0:63:1800	0:65,0:65:1800	0:144,0:144:1800
+Bacteroides_vulgatus	2483405	.	E	<NON_REF>	318.17	.	AC=0;AF=0.00;AN=83;DP=18106;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:112,0:112:1800	0:66,0:66:1800	0:67,0:67:1800	0:142,1:143:1800
+Bacteroides_vulgatus	2483406	.	F	<NON_REF>	346.17	.	AC=0;AF=0.00;AN=83;DP=18111;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:110,0:110:1800	0:64,0:64:1800	0:64,0:64:1800	0:144,0:144:1800
+Bacteroides_vulgatus	2483407	.	G	<NON_REF>	338.17	.	AC=0;AF=0.00;AN=83;DP=18047;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:112,0:112:1800	0:65,0:65:1800	0:61,0:61:1800	0:141,0:141:18
+Bacteroides_vulgatus	2483408	.	Z	A	339.17	.	AC=0;AF=0.00;AN=83;DP=18112;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:110,0:110:1800	0:65,0:65:1800	1:65,0:65:1800	0:142,0:142:1800
+Bacteroides_vulgatus	2483408	.	H	B	339.17	.	AC=0;AF=0.00;AN=83;DP=18112;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:110,0:110:1800	0:65,0:65:1800	1:65,0:65:1800	0:142,0:142:1800
+Bacteroides_vulgatus	2483410	.	J	C	329.17	.	AC=0;AF=0.00;AN=83;DP=18055;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:108,0:108:1800	0:64,0:64:1800	0:64,1:65:1800	0:137,0:137:1800
+Bacteroides_vulgatus	2483411	.	K	D	328.17	.	AC=0;AF=0.00;AN=83;DP=18094;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:106,0:106:1800	0:64,0:64:1800	0:62,1:63:1800	0:139,0:139:1800
+Bacteroides_vulgatus	2483412	.	L E	350.17	.	AC=0;AF=0.00;AN=83;DP=18051;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:107,0:107:1800	1:64,0:64:1800	0:61,0:61:1800	0:137,0:137:1800
+Bacteroides_vulgatus	2483413	.	M	F	351.17	.	AC=0;AF=0.00;AN=83;DP=18126;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:108,0:108:1800	0:64,0:64:1800	0:62,0:62:1800	0:137,0:137:1800
+Bacteroides_vulgatus	2483414	.	N	G	339.17	.	AC=0;AF=0.00;AN=83;DP=18077;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:109,0:109:1800	1:64,0:64:1800	0:62,1:63:1800	0:137,0:137:1800
+Bacteroides_vulgatus	2483415	.	O	H	347.17	.	AC=0;AF=0.00;AN=83;DP=18102;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	1:107,0:107:1800	0:64,0:64:1800	0:62,1:63:1800	0:136,0:136:1800
+Bacteroides_vulgatus	2483416	.	P	<NON_REF>	351.17	.	AC=0;AF=0.00;AN=83;DP=18059;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:107,0:107:1800	0:64,0:64:1800	0:62,0:62:1800	0:137,0:137:1800
+Bacteroides_vulgatus	2483417	.	Q	<NON_REF>	350.17	.	AC=0;AF=0.00;AN=83;DP=18047;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:107,0:107:1800	0:64,0:64:1800	0:59,0:59:1800	0:135,0:135:1800
+Bacteroides_vulgatus	2483418	.	R	<NON_REF>	352.17	.	AC=0;AF=0.00;AN=83;DP=18163;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:107,0:107:1800	0:64,0:64:1800	0:59,0:59:1800	0:135,0:135:1800
+Bacteroides_vulgatus	2483419	.	S	<NON_REF>	355.17	.	AC=0;AF=0.00;AN=83;DP=18065;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:107,0:107:1800	0:64,0:64:1800	0:59,0:59:1800	0:135,0:135:1800
+Bacteroides_vulgatus	2483420	.	T	<NON_REF>	352.17	.	AC=0;AF=0.00;AN=83;DP=18145;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:107,0:107:1800	0:67,0:67:1800	0:63,0:63:1800	0:134,0:134:1800
+Bacteroides_vulgatus	2483421	.	U	<NON_REF>	353.17	.	AC=0;AF=0.00;AN=83;DP=18169;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:105,0:105:1800	0:67,0:67:1800	0:65,0:65:1800	0:133,0:133:1800
+Bacteroides_vulgatus	2483422	.	V	<NON_REF>	347.17	.	AC=0;AF=0.00;AN=83;DP=18127;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:105,0:105:1800	0:64,0:64:1800	0:63,0:63:1800	0:133,0:133:1800
+Bacteroides_vulgatus	2483423	.	W	<NON_REF>	341.11	.	AC=0;AF=0.00;AN=82;DP=18049;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:103,0:103:1800	0:66,0:66:1800	0:63,0:63:1800	0:132,0:132:1800
+Bacteroides_vulgatus	2483424	.	X	<NON_REF>	342.17	.	AC=0;AF=0.00;AN=83;DP=18080;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:106,0:106:1800	0:67,0:67:1800	0:64,0:64:1800	0:132,0:132:1800
+Bacteroides_vulgatus	2483425	.	Y	<NON_REF>	339.17	.	AC=0;AF=0.00;AN=83;DP=18076;MLEAC=0;MLEAF=0.00	GT:AD:DP:RGQ	0:108,0:108:1800	0:67,0:67:1800	0:64,0:64:1800	0:128,0:128:1800
